@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dream Auto Pvt. Ltd.</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  @livewireStyles
+
+<script src="https://khalti.s3.ap-south-1.amazonaws.com/KPG/dist/2020.12.17.0.0.0/khalti-checkout.iffe.js"></script>
+
+
+  <!-- Favicons -->
+  <link href="{{asset('frontend/assets/img/logo1.png')}}" rel="icon">
+  <link href="{{asset('frontend/assets/img/logo1.png')}}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  {{-- {{asset('')}} --}}
+  <!-- Vendor CSS Files -->
+  <link href="{{asset('frontend/assets/vendor/aos/aos.css')}}" rel="stylesheet">
+  <link href="{{asset('frontend/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{asset('frontend/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{asset('frontend/assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{asset('frontend/assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{asset('frontend/assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
+  <link href="{{asset('frontend/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+
+  {{-- Toast Cdn  --}}
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+{{-- Toast Cdn  --}}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+<!-- Template Main CSS File -->
+<link href="{{asset('frontend/assets/css/style.css')}}" rel="stylesheet">
+
+<!-- JQuery Table Script -->
+<script src="{{asset('datatable/jquery-3.6.0.js')}}"></script>
+<link rel="stylesheet" href="{{asset('datatable/datatables.css')}}">
+<script src="{{asset('datatable/datatables.js')}}"></script>
+
+
+
+</head>
+
+<body>
+
+@include('layouts.navbar_user')
+
+  <main id="main">
+     
+    @yield('content')
+
+</main><!-- End #main -->
+
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>Dream Auto Pvt. Ltd.</h3>
+          <p>
+            Savapati chowk <br>
+            Kawasoti-8 , Nawalparasi<br>
+            Nepal <br><br>
+            <strong>Phone:</strong> +977-982-1536439<br>
+            <strong>Email:</strong> kawasotisuzukiservice@gmail.com<br>
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="/">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{{route('user.aboutus')}}">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{{route('user.products')}}">Parts</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{{route('user.orders.cart')}}">Cart</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{{route('user.contactus')}}">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i>Book Appointment</li>
+            <li><i class="bx bx-chevron-right"></i>Buy parts</li>
+            <li><i class="bx bx-chevron-right"></i>Denting</li>
+            <li><i class="bx bx-chevron-right"></i>Painting</li>
+            <li><i class="bx bx-chevron-right"></i>On spot service</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Social Networks</h4>
+          <p>You can connect with our team for more information</p>
+          <div class="social-links mt-3">
+           
+            <a href="https://www.facebook.com/people/%E0%A4%B9%E0%A4%BE%E0%A4%AE%E0%A5%8D%E0%A4%B0%E0%A5%8B-%E0%A4%A1%E0%A5%8D%E0%A4%B0%E0%A4%BF%E0%A4%AE-%E0%A4%85%E0%A4%9F%E0%A5%8B-%E0%A4%95%E0%A4%BE%E0%A4%B5%E0%A4%BE%E0%A4%B8%E0%A5%8B%E0%A4%A4%E0%A5%80/100024872172559/" class="facebook" target="_blank" ><i class="bx bxl-facebook"></i></a>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer-bottom clearfix">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Dream Auto Pvt. Ltd.</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Maintained by <a href="https://pramodchhetri.com.np/">Pramod Chhetri</a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+{{-- TinyMCE --}}
+<script src="{{asset('tinymce/tinymce.min.js')}}"></script>
+
+<!-- Vendor JS Files -->
+<script src="{{asset('frontend/assets/vendor/aos/aos.js')}}"></script>
+<script src="{{asset('frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('frontend/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+<script src="{{asset('frontend/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+<script src="{{asset('frontend/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+<script src="{{asset('frontend/assets/vendor/waypoints/noframework.waypoints.js')}}"></script>
+<script src="{{asset('frontend/assets/vendor/php-email-form/validate.js')}}"></script>
+
+<!-- Template Main JS File -->
+<script src="{{asset('frontend/assets/js/main.js')}}"></script>
+
+@include('layouts.usertoastr')
+
+@livewireScripts
+
+</body>
+
+</html>
