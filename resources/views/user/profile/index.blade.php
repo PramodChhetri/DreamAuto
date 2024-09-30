@@ -184,15 +184,7 @@
                             <label for="phone">{{ __('Phone Number') }}</label>
                             <input type="tel" name="phone" id="phone" class="form-control" value="{{old('name', Auth::user()->phone)}}" required>
                         </div>
-                        <div class="form-group pan-picture">
-                            <label for="pan-image">{{ __('PAN Image') }}</label>
-                            <img class="img-fluid" src="{{ asset('images/pan/' . Auth::user()->panimage) }}" alt="User Image">
-                            <input type="file" name="panimage" id="pan-image" class="form-control-file">
-                        </div>
-                        <div class="form-group">
-                            <label for="pan-number">{{ __('PAN Number') }}</label>
-                            <input type="text" name="pannumber" id="pan-number" class="form-control" value="{{old('name', Auth::user()->pannumber)}}" required>
-                        </div>
+
                         <button type="submit" class="btn btn-dark">{{ __('Save') }}</button>
                     </form>
                 </div>

@@ -16,6 +16,8 @@ class AdminSeeder extends Seeder
     {
         // Role is unique so it can created for one time only
         $adminRole = Role::create(['name' => 'admin']);
+        $userRole = Role::create(['name' => 'user']);
+
         User::create([
             'name' => 'Admin',
             'email' => 'admin@admin.com',

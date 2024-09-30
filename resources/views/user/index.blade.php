@@ -131,6 +131,119 @@
         </div>
       </section><!-- End Portfolio Section -->
 
+            <!-- ======= Team Section ======= -->
+            <section id="team" class="team section-bg">
+              <div class="container" data-aos="fade-up">
+        
+                <div class="section-title">
+                  <h2>Team</h2>
+                  <p>The core team of the organization direct the quality and direction of the organization. We have the best people of the industry who asset the data and improves the quality of the oraganization</p>
+                </div>
+        
+                <div class="row">
+        
+                  <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="member d-flex align-items-start">
+                      <div class="pic"><img  src="{{asset('frontend/assets/img/team/team3.jpg')}}" class="img-fluid" alt=""></div>
+                      <div class="member-info">
+                        <h4>Santosh Malla Thakuri</h4>
+                        <span>Chief Executive Officer</span>
+                        <p>Incharge of the management and administrative direction of organization</p>
+                        <div class="social">
+                          <a href=""><i class="ri-twitter-fill"></i></a>
+                          <a href=""><i class="ri-facebook-fill"></i></a>
+                          <a href=""><i class="ri-instagram-fill"></i></a>
+                          <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="member d-flex align-items-start">
+                      <div class="pic"><img src="{{asset('frontend/assets/img/team/team4.jpg')}}" class="img-fluid" alt=""></div>
+                      <div class="member-info">
+                        <h4>Pravin Chhetri</h4>
+                        <span>Manager</span>
+                        <p>Responsible for monitoring products and assisting strategic direction</p>
+                        <div class="social">
+                          <a href=""><i class="ri-twitter-fill"></i></a>
+                          <a href=""><i class="ri-facebook-fill"></i></a>
+                          <a href=""><i class="ri-instagram-fill"></i></a>
+                          <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+              
+                </div>
+        
+              </div>
+            </section><!-- End Team Section -->
+        
+        
+            <!-- ======= Frequently Asked Questions Section ======= -->
+            <section id="faq" class="faq section">
+              <div class="container" >
+        
+                <div class="section-title">
+                  <h2>Frequently Asked Questions</h2>
+                  <p>Here are the top questions that are frequently asked by customerer through different social media platforms.</p>
+                </div>
+        
+                <div class="faq-list">
+                  <ul>
+                    <li data-aos="fade-up " style="background-color: #f3f5fa; " data-aos-delay="100">
+                      <i class="bx bx-help-circle icon-help"></i> <a data-bs-target="#faq-list-1">Why should I choose Dream Auto Pvt. Ltd. for my car maintenance? </a>
+                      <div id="faq-list-1"  data-bs-parent=".faq-list">
+                        <p>
+                          At Dream Auto Pvt. Ltd., we ensure quality service by experienced technicians using genuine parts, preserving your vehicle's warranty.
+                        </p>
+                      </div>
+                    </li>
+        
+                    <li data-aos="fade-up" style="background-color: #f3f5fa; " data-aos-delay="200">
+                      <i class="bx bx-help-circle icon-help"></i> <a data-bs-target="#faq-list-2" >How to book a service appointment?</a>
+                      <div id="faq-list-2"  data-bs-parent=".faq-list">
+                        <p>
+                          You can easily schedule a service by calling us or using our online booking platform.
+                        </p>
+                      </div>
+                    </li>
+        
+                    <li data-aos="fade-up " style="background-color: #f3f5fa; " data-aos-delay="300">
+                      <i class="bx bx-help-circle icon-help"></i> <a data-bs-target="#faq-list-3" >What services does Dream Auto Pvt. Ltd. offer?</a>
+                      <div id="faq-list-3"  data-bs-parent=".faq-list">
+                        <p>
+                          We provide a range of automotive services including denting, painting, mechanical repairs, comprehensive inspections, and customization/upgrades.
+                        </p>
+                      </div>
+                    </li>
+        
+                    <li data-aos="fade-up" style="background-color: #f3f5fa; " data-aos-delay="400">
+                      <i class="bx bx-help-circle icon-help"></i> <a  data-bs-target="#faq-list-4" >Do you offer any discounts or loyalty programs for regular customers?</a>
+                      <div id="faq-list-4"  data-bs-parent=".faq-list">
+                        <p>
+                          Yes, we have special discounts and loyalty programs available for our valued customers; inquire with us for more details.
+                        </p>
+                      </div>
+                    </li>
+        
+                    <li style="background-color: #f3f5fa; ">
+                      <i class="bx bx-help-circle icon-help"></i> <a data-bs-target="#faq-list-5" >Can I get a loaner car while my vehicle is being serviced?</a>
+                      <div id="faq-list-5"  data-bs-parent=".faq-list">
+                        <p>
+                          Yes, we offer loaner cars or shuttle services to ensure minimal disruption to your daily routine during the service period.
+                        </p>
+                      </div>
+                    </li>
+        
+                  </ul>
+                </div>
+        
+              </div>
+            </section><!-- End Frequently Asked Questions Section -->
 
   
 

@@ -39,22 +39,22 @@ class RegisteredUserController extends Controller
         ]);
 
         $user = User::create([
-            'role_id' => 3,    // Buyer
+            'role_id' => 2,
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
 
-        // event(new Registered($user));
+        event(new Registered($user));
 
-        $notification = Notification::create([
-            'title' => 'NewUser',
-            'content' => 'New User of name ' . $user->name . ' at ' . $user->created_at . ' has registered.',
-            'status' => 'Queue',
-            'user_id' => 1,
-        ]);
-        // Custom for notification in admin dashboard
-        event(new UserRegistration($notification));
+        // $notification = Notification::create([
+        //     'title' => 'NewUser',
+        //     'content' => 'New User of name ' . $user->name . ' at ' . $user->created_at . ' has registered.',
+        //     'status' => 'Queue',
+        //     'user_id' => 1,
+        // ]);
+        // // Custom for notification in admin dashboard
+        // event(new UserRegistration($notification));
 
         Auth::login($user);
 

@@ -40,7 +40,22 @@
                 @endif
               </td>
                 <td>
-                    <a onclick="showDelete('{{$OD->id}}')" class="bg-red-600 text-white px-2 py-1 rounded shadow hover:shadow-red-400 cursor-pointer">Delete</a>
+                    @if ($OD->status != "Pending")
+                    <a onclick="" class="bg-gray-600 text-white px-2 py-1 rounded shadow hover:shadow-red-400 cursor-pointer">Pending</a>
+                    @endif
+
+                    @if ($OD->status != "Approved")
+                    <a onclick="" class="bg-blue-600 text-white px-2 py-1 rounded shadow hover:shadow-red-400 cursor-pointer">Approved</a>
+                    @endif
+
+                    @if ($OD->status != "Completed")
+                    <a onclick="" class="bg-green-600 text-white px-2 py-1 rounded shadow hover:shadow-red-400 cursor-pointer">Completed</a>
+                    @endif
+
+                    @if ($OD->status != "Cancelled")
+                    <a onclick="showDelete('{{$OD->id}}')" class="bg-red-600 text-white px-2 py-1 rounded shadow hover:shadow-red-400 cursor-pointer">Cancelled</a>
+                    @endif
+
                 </td>
             </tr>
             @endforeach
@@ -54,7 +69,7 @@
             <div class="bg-white p-4 rounded-lg">
                 <form action="{{route('orders.destroy')}}" method="POST">
                     @csrf
-                    <p class="text-2xl">Are you sure want to Delete?</p>
+                    <p class="text-2xl">Are you sure want to cancel?</p>
                     <input type="hidden" name="dataid" id="dataid" value="">
                     <div class="flex justify-center">
                         <input type="submit" value="Yes" class="bg-blue-600 text-white px-4 py-2 mx-2 rounded-lg cursor-pointer">

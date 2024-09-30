@@ -157,11 +157,7 @@ Route::middleware('auth', 'role:admin')->group(function () {
     Route::get('/orders', [AdminOrderController::class, 'index'])->name('orders.index');
     Route::post('/orders/destroy', [AdminOrderController::class, 'destroy'])->name('orders.destroy');
 
-    // Feedbacks
-    Route::get('/feedbacks', [FeedbackController::class, 'index'])->name('feedbacks.index');
-    Route::post('/feedbacks/destroy', [FeedbackController::class, 'destroy'])->name('feedbacks.destroy');
-
-    // Feedbacks
+    // Message
     Route::get('/messages', [ContactController::class, 'index'])->name('messages.index');
     Route::post('/messages/destroy', [ContactController::class, 'destroy'])->name('messages.destroy');
 

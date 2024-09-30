@@ -120,7 +120,7 @@
             <table class="table">
               <thead>
                 <tr>
-                  <th scope="col">Product</th>
+                  <th scope="col">Part</th>
                   <th scope="col">Price</th>
                   <th scope="col">Quantity</th>
                   <th scope="col">Total</th>
@@ -156,7 +156,7 @@
           <div class="m-4">
             <span><b>Payment Options</b></span>
                 <hr>
-              <button class="btn-add" type="submit">Cash On Delivery</button>
+              <button class="btn-add" type="submit">Cash Payment</button>
             </form>
             
           </div>

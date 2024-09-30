@@ -10,7 +10,7 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a href="{{route('user.index')}}">Home</a></li>
-          <li><a href="{{route('user.products')}}">Products</a></li>
+          <li><a href="{{route('user.products')}}">Parts</a></li>
           <li ><a href="{{route('user.aboutus')}}">About</a></li>
           <li><a href="{{route('user.contactus')}}">Contact Us</a></li>
           

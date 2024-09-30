@@ -50,6 +50,7 @@
             <h3>{{$product->name}}</h3>
             <ul>
 
+              <li><strong>Part Number</strong>: {{$product->alternate_code}}</li>
               <li><strong>Price</strong>: Rs. {{$product->price}}</li>
               <li><strong>Available</strong>: {{$product->stock}} Piece</li>
               <li><strong>Detail</strong>: {{$product->description}}</li>

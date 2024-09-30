@@ -78,17 +78,8 @@ class UserProfileContoller extends Controller
         $data = $request->validate([
             'phone' => 'required',
             'address' => 'required',
-            'panimage' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-            'pannumber' => 'required',
         ]);
 
-        if ($request->hasFile('panimage')) {
-            $panimage = $request->file('panimage');
-            $name = time() . '.' . $panimage->getClientOriginalExtension();
-            $destinationPath = public_path('/images/pan');
-            $panimage->move($destinationPath, $name);
-            $data['panimage'] = $name;
-        }
 
         $user->update($data);
         return redirect(route('user.profile.index'))->with('success', 'Business Information Updated Successfully');
@@ -105,11 +96,6 @@ class UserProfileContoller extends Controller
             // Check if the image file exists before attempting to unlink it
             if ($user->image !== "default.jpg" &&  $user->image) {
                 unlink('images/users/' . $user->image);
-            }
-
-            // Check if the panimage file exists before attempting to unlink it
-            if ($user->panimage) {
-                unlink('images/pan/' . $user->panimage);
             }
 
             // Delete the user
